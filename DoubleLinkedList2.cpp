@@ -126,6 +126,15 @@ public:
         cout << "Record with roll number" << rollNo << "deleted" << endl;
     }
 
+     void retraverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+    }
+
 };
 
 

@@ -147,8 +147,16 @@ public:
             // Step 3: Move to next node
             currentNode = currentNode->next;
             i++;
+        } 
+    }
+
+        void retraverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
         }
-        
     }
 
 };

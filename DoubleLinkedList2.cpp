@@ -95,7 +95,14 @@ public:
 
         Node *current = START;
 
-       
+        // Step 1: Transverse the list to find the node
+        while(current != NULL && current->noMhs != rollNo)
+        {
+            current = current->next;
+            return;
+        }
+
+        
     }
 
     

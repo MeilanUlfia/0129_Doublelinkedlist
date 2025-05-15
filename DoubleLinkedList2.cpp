@@ -81,7 +81,22 @@ public:
 
     }
 
-    
+    void hapus()
+    {
+        if(START == NULL)
+        {
+            cout << "\nList is" << endl;
+            return;
+        }
+
+        cout << "\nMasukkan NIM yang akan didelete";
+        int rollNo;
+        cin >> rollNo;
+
+        Node *current = START;
+
+       
+    }
 
     
 };

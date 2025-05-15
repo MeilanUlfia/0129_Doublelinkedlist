@@ -29,15 +29,24 @@ public:
 
         // Step 1: Allocate memory for new node
         Node *newNode = new Node();
-    }
 
-public:
-    {
-
-        // Step 2: Assign value 
+        // Step 2: Assign value to the data fields
         newNode->noMhs = nim;
 
+        // Step3: Insert at beginning if list is empty or nim is smallest
+        if (START == NULL || nim <= START->noMhs)
+        {
+            if (START != NULL && nim == START->noMhs)
+            {
+                cout << "\nDuplicate number not allowed" << endl;
+                return;
+            }
+          
+        }
+
+       
     }
+    
 };
 
 
